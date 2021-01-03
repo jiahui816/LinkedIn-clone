@@ -31,9 +31,10 @@ function Feed() {
     e.preventDefault();
     db.collection("posts").add({
       name: "Jia",
-      description: "Test",
+      description: "",
       message: input,
-      photoUrl: "",
+      photoUrl:
+        "https://cdn2.vectorstock.com/i/1000x1000/94/86/indian-boy-face-avatar-cartoon-vector-25919486.jpg",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
